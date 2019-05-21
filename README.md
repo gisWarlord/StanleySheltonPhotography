@@ -1,8 +1,8 @@
-# Project_Name
+# Stanley Shelton Photography
 
 ## Description
 ```
-A brief description of your project
+A website to showcase Stanley Shelton Photography
 
 ```
 
