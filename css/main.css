@@ -1,57 +1,136 @@
-/* Load Web Fonts -------------------- */
-
-@font-face {
-    font-family: 'Abolition Regular';
-    src: url('../fonts/abolition-regular-webfont.eot');
-    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/abolition-regular-webfont.woff') format('woff'),
-         url('../fonts/abolition-regular-webfont.ttf') format('truetype');
-  }
-  
-  /* Base Styles -------------------- */
-body {
+.main {
     background-color: black;
 }
 
-.title {
-    text-align: center;
-    font-size: 1.625rem; 
-    letter-spacing: .065em;
-    font-weight: 200;
-    border-bottom: 2px;
-    padding-bottom: 10px;
-    background-image: url("../img/Louisville_Night.jpg");
-    background-size: 90%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+    position: relative;
+}
+  
+.headImg {                   /* Header Image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 75%;
 }
 
-.title,
-.subtitle {
-    color: whitesmoke;
-    /* background-color: black; */
-    text-shadow: black 0px 2px 2px;
+.headImg:hover {            /* Change the image in the header on hover */
+    content: url("../img/Louisville_NightBW.jpg");
+}
+
+.headTxt {                   /* Text inside the header image */
+    font-size: 1.65rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.main-header,
-.main-footer {
-    text-align: center;
-}
-
-.main-footer {
+    bottom: 1.5%;
+    right: 15%;
+    background-color: black;
     color: whitesmoke;
-    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#footer {
+    color: whitesmoke;
+    text-align: center;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* Footer height */
+    height: 2.5rem;         /* Footer height */
+}
+
+#myBtn {
+    display: none;                  /* Hidden by default */
+    position: fixed;                /* Fixed/sticky position */
+    bottom: 20px;                   /* Place the button at the bottom of the page */
+    right: 30px;                    /* Place the button 30px from the right */
+    z-index: 99;                    /* Make sure it does not overlap */
+    border: none;                   /* Remove borders */
+    outline: none;                  /* Remove outline */
+    background-color: lightgray;  /* Set a background color */
+    color: black;                 /* Text color */
+    cursor: pointer;                /* Add a mouse pointer on hover */
+    padding: 15px;                  /* Some padding */
+    border-radius: 10px;            /* Rounded corners */
+    font-size: 18px;                /* Increase font size */
+}
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    color: white;           /* Change the font color to white on hover */
+}
+
+/* Container for flexboxes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+/* Create four equal columns */
+.column {
+    flex: 20%;
+    padding: 20px;
+}
+
+.imgContainer {
+    height: 300px;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 5px;
+    width: 240px;
+    height: 240px;
+}
+  
+/***************** Media Queries  *****************/
+
+@media screen and (max-width: 992px) {
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    .column {
+        flex: 50%;
+        font-size:  80%;
+    }
+
+    .headTxt {
+        font-size: 1.2rem;
+    }
+
+    .imgContainer {
+        height: 75%;
+        justify-content: center;
+    }
+
+    .item {
+        height: 160px;
+        width: 160px;
+    }
+
+    .headImg {
+        width: 90%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        font-size: 70%;
+    }
+
+    .headTxt {
+        font-size: .8rem;
+    }
+
+    .imgContainer {
+        height: 50%;
+        justify-content: center;
+    }
 }
