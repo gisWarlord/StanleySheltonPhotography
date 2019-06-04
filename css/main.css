@@ -94,6 +94,7 @@
   max-height: 500px;
   position: relative;
   margin: auto;
+  padding-top: 10px;
 }
 
 /* Hide the images by default */

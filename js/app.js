@@ -1,7 +1,7 @@
 var slideIndex = 1;
 
 /************************************************************** */
-showSlides(slideIndex);
+window.onloadend = function() {showSlides(slideIndex)};
 
 // Next/previous controls
 function plusSlides(n) {
