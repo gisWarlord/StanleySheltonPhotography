@@ -14,54 +14,44 @@
         </div>
     </div>
 
-    <!-- <div class="imgContainer">
-        <img class="item" src=".\img\small\TheFlag.jpg" alt=" The American Flag">
-        <img class="item" src=".\img\small\NortonCommons_SunSet.jpg" alt="Sunrise">
-        <img class="item" src=".\img\small\EW_Line.jpg" alt="Evan Williams">
-        <img class="item" src=".\img\small\HubersFarm_Waterfall.jpg" alt="Waterfall">
-        <img class="item" src=".\img\small\TaylorsvilleLake.jpg" alt="Lake">
-        <img class="item" src=".\img\small\Louisville_Bat.jpg" alt="Big Bat">
-        <img class="item" src=".\img\small\LouisvilleSunRise.jpg" alt="Sunrise">
-    </div> -->
-
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div class="slideshow-container" onload="currentSlide(1)">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-        <div class="numbertext">1 / 6</div>
-        <img class="slideshow-img" src=".\img\small\TheFlag.jpg" style="width:50%">
-        <div class="text">Caption Text</div>
+            <div class="numbertext">1 / 6</div>
+            <img class="slideshow-img" src=".\img\small\TheFlag.jpg">
+            <div class="text">The Flag</div>
         </div>
     
         <div class="mySlides fade">
-        <div class="numbertext">2 / 6</div>
-        <img class="slideshow-img" src="http://placeimg.com/200/200/nature" style="width:50%">
-        <div class="text">Caption Two</div>
+            <div class="numbertext">2 / 6</div>
+            <img class="slideshow-img" src=".\img\small\NortonCommons_SunSet.jpg">
+            <div class="text">Local Sunset</div>
         </div>
     
         <div class="mySlides fade">
-        <div class="numbertext">3 / 6</div>
-        <img class="slideshow-img" src=".\img\small\Louisville_Bat.jpg" style="width:50%">
-        <div class="text">Caption Three</div>
+            <div class="numbertext">3 / 6</div>
+            <img class="slideshow-img" src=".\img\small\Louisville_Bat.jpg">
+            <div class="text">Louisville Slugger Museum</div>
         </div>
     
         <div class="mySlides fade">
             <div class="numbertext">4 / 6</div>
-            <img class="slideshow-img" src="http://placeimg.com/200/200/nature" style="width:50%">
-            <div class="text">Caption Three</div>
+            <img class="slideshow-img" src=".\img\small\LouisvilleSunRise.jpg">
+            <div class="text">Sunrise Over Louisville</div>
         </div>
     
         <div class="mySlides fade">
             <div class="numbertext">5 / 6</div>
-            <img class="slideshow-img" src=".\img\small\EW_Line.jpg" style="width:50%">
-            <div class="text">Caption Three</div>
+            <img class="slideshow-img" src=".\img\small\EW_Line.jpg">
+            <div class="text">Evan Williams Anyone?</div>
         </div>
     
         <div class="mySlides fade">
             <div class="numbertext">6 / 6</div>
-            <img class="slideshow-img" src="http://placeimg.com/200/200/nature" style="width:50%">
-            <div class="text">Caption Three</div>
+            <img class="slideshow-img" src=".\img\small\HubersFarm_Waterfall.jpg">
+            <div class="text">Local Water Fall</div>
         </div>
         
         <!-- Next and previous buttons -->
@@ -105,6 +95,6 @@
     
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
-<footer id="footer">&copy; <script>returnFullYear();</script> Shelton Holdings, LLC. All rights reserved.</footer>
+<footer id="footer">&copy; <script>setCopyrightDate();</script> Shelton Holdings, LLC. All rights reserved.</footer>
 
 </html>
