@@ -94,7 +94,7 @@
   max-height: 500px;
   position: relative;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 /* Hide the images by default */
@@ -103,6 +103,7 @@
 }
 
 .slideshow-img {
+  height: 100%;
   width: 100%;
 }
 
