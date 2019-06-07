@@ -3,10 +3,34 @@
 <head>
     <title>Stanley Shelton Photography</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body class="main">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Stanley Shelton Photography</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <div class="container">
         <img class="headImg" src=".\img\Louisville_Night.jpg" alt="Louisville Sun Rise">
         <div class="text-block">
@@ -15,60 +39,72 @@
     </div>
 
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div class="container">
+            <h2>Sample Pictures</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade" style="display: block">
-            <div class="numbertext">1 / 6</div>
-            <img class="slideshow-img" src=".\img\small\TheFlag.jpg">
-            <div class="text">Flag</div>
-        </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <!-- images with number and caption text -->
+                <div class="item active col-md-8 col-lg-6">
+                    <img src=".\img\small\TheFlag.jpg" alt="Flag" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Stars & Strips for Ever</h3>
+                        <p>1 / 6</p>
+                    </div>
+                </div>
+                <div class="item col-md-8 col-lg-6">
+                    <img src=".\img\small\NortonCommons_SunSet.jpg" alt="Flag" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Sunset</h3>
+                        <p>2 / 6</p>
+                    </div>
+                </div>
+                <div class="item col-md-8 col-lg-6">
+                    <img src=".\img\small\TaylorsvilleLake.jpg" alt="Flag" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Lake View</h3>
+                        <p>3 / 6</p>
+                    </div>
+                </div>
+                <div class="item col-md-8 col-lg-6">
+                    <img src=".\img\small\LouisvilleSunRise.jpg" alt="Flag" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Vestibulum aliquet</h3>
+                        <p>4 / 6</p>
+                    </div>
+                </div>
+                <div class="item col-md-8 col-lg-6">
+                    <img src=".\img\small\EW_Line.jpg" alt="Flag" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Vestibulum aliquet</h3>
+                        <p>5 / 6</p>
+                    </div>
+                </div>
+                <div class="item col-md-8 col-lg-6">
+                    <img src=".\img\small\HubersFarm_Waterfall.jpg" alt="Flag" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Vestibulum aliquet</h3>
+                        <p>6 / 6</p>
+                    </div>
+                </div>
     
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 6</div>
-            <img class="slideshow-img" src=".\img\small\NortonCommons_SunSet.jpg">
-            <div class="text">Sunset</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 6</div>
-            <img class="slideshow-img" src=".\img\small\TaylorsvilleLake.jpg">
-            <div class="text">Lake View</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 6</div>
-            <img class="slideshow-img" src=".\img\small\LouisvilleSunRise.jpg">
-            <div class="text">Sunrise Over Louisville</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 6</div>
-            <img class="slideshow-img" src=".\img\small\EW_Line.jpg">
-            <div class="text">Evan Williams Anyone?</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">6 / 6</div>
-            <img class="slideshow-img" src=".\img\small\HubersFarm_Waterfall.jpg">
-            <div class="text">Water Fall</div>
-        </div>
-        
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div> 
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div> 
     </div>
     <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-        <span class="dot" onclick="currentSlide(4)"></span> 
-        <span class="dot" onclick="currentSlide(5)"></span> 
-        <span class="dot" onclick="currentSlide(6)"></span> 
-    </div>
 
     <div class="row">
         <div class="column" style="background-color:#aaa;">
