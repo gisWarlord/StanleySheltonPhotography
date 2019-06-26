@@ -35,19 +35,20 @@
                 <div class="headTxt">Welcome to Stanley Shelton Photography</div>
             </div>
         </div>
-
+        
+        <h2>Sample Pictures</h2>
         <div class="container">
-            <h2>Sample Pictures</h2>
+            
             <div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
                 <!-- Indicators -->
-                <!--<ol class="carousel-indicators">
+                <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                     <li data-target="#myCarousel" data-slide-to="4"></li>
                     <li data-target="#myCarousel" data-slide-to="5"></li>
-                </ol>-->
+                </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner col-xs-8 col-sm-6 col-md-4 col-lg-4 center-block">
@@ -113,28 +114,34 @@
         <div class="row">
             <div id="about" class="column" style="background-color:#aaa;">
                 <h2>About</h2>
-                <p>Stanley was born and raised in Louisville, Ky. 
-                    He is a U.S. Army Reserve veteran and life long sports fan. 
+                <p>Stanley Shelton is a landscape and real estate photographer
+                    that has a real passion to showcase the beauty of the world. He is based in Louisville, Kentucky.
+                </p>
+                <p>Stanley is a U.S. Army Reserve veteran and life long sports fan. 
                     Stanley is married to Michele and has three adult children.</p>
-                <p>Based in Louisville, KY, Stanley Shelton Photography is a ...</p>
             </div>
             
             <div id="contact" class="column" style="background-color:#bbb;">
                 <h2>Contact</h2>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies 
-                metus mauris, nec interdum turpis euismod in. Vestibulum aliquet, felis 
-                eget tristique blandit, nulla nulla.</p> -->
-                <label for="email">Enter your email address:</label>
-
-                <input type="email" id="email" size="30" required>
+                <p>Send Stanly an email...</p>
+                <form action="" method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send your message</button>
+                    </div>
+                </form>
             </div>
-            
-            <!-- <div class="column" style="background-color:#ccc;">
-                <h2>Lorem ipsum dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies 
-                metus mauris, nec interdum turpis euismod in. Vestibulum aliquet, felis 
-                eget tristique blandit, nulla nulla.</p>
-            </div> -->
         </div>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
