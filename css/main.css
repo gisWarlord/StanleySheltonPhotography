@@ -19,7 +19,7 @@
 }
 
 .headTxt {                   /* Text inside the header image */
-  font-size: 1.65rem;
+  font-size: 2.5rem;
   position: absolute;
   bottom: 1.5%;
   right: 15%;
@@ -77,6 +77,12 @@
   width: 100%;
 }
 
+#contact-form {
+  background-image: url(../img/BatLookUp.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /***************** Media Queries  *****************/
 
 @media screen and (max-width: 992px) {
@@ -87,7 +93,11 @@
   }
 
   .headTxt {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
+  }
+
+  .carousel-heading {
+    font-size: 2rem;
   }
 }
 
@@ -102,6 +112,6 @@
   }
 
   .headTxt {
-      font-size: 1rem;
+      font-size: 1.3rem;
   }
 }
