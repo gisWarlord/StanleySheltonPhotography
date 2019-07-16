@@ -13,7 +13,8 @@ A website to showcase Stanley Shelton Photography
 The class(es) I created are:
 
 1. .headImg
-    Sets the properties of the header image (display, margin-left, margin-right, width, height)
+    Sets the properties of the header image (display, margin-left, 
+    margin-right, width, height)
 
 2. .headImg:hover
     Changes the image in the header on hover
