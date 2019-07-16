@@ -1,6 +1,6 @@
 var slideIndex = 1;
 
-/************************************************************** */
+/*********************** Slid show controls *********************** */
 window.onloadend = function() {showSlides(slideIndex)};
 
 // Next/previous controls
@@ -52,3 +52,7 @@ function topFunction() {
   document.body.scrollTop = 0;            // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+$("#btnSend").click(function(){
+  alert("This Form is under construction");
+});
