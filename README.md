@@ -23,7 +23,6 @@ The class(es) I created are:
     Sets the text inside the header image
 
 
-
 ## Custom JavaScript Functions
 ```
 The javascript functions I created are:
