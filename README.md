@@ -12,20 +12,29 @@ A website to showcase Stanley Shelton Photography
 ```
 The class(es) I created are:
 
-1. class name ex( .main-info-section )
-.. what class does, ex( adds padding & changes background color of .main-info-section )
+1. .headImg
+    Sets the properties of the header image (display, margin-left, 
+    margin-right, width, height)
 
-2.
+2. .headImg:hover
+    Changes the image in the header on hover
 
-```
-
+3. .headTxt
+    Sets the text inside the header image
 
 
 ## Custom JavaScript Functions
 ```
 The javascript functions I created are:
 
-1. function name ex( animate() )
-.. what function does ex( animate() is used to move the elements in the info div across the screen)
+1. function setCopyrightDate()
+    Updates the Year of the copyright in the footer
 
-```
+2. function showSlides(n)
+    Updates/changes the slid show image
+    
+3. function plusSlides(n)
+    Next/previous controls
+
+4. function currentSlide(n)
+    Thumbnail image controls
