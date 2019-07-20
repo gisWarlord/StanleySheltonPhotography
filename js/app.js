@@ -54,5 +54,8 @@ function topFunction() {
 }
 
 $("#btnSend").click(function(){
-  alert("This Form is under construction");
+  // alert("This Form is under construction");
+  $("#frmMessage").fadeIn();
+  $("#frmMessage").html("This Feature is Under Construction");
+  $("#frmMessage").delay(4000).fadeOut();
 });
