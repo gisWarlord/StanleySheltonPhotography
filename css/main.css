@@ -21,8 +21,8 @@
 .headTxt {                   /* Text inside the header image */
   font-size: 2.5rem;
   position: absolute;
-  bottom: 1.5%;
-  right: 15%;
+  bottom: 5%;
+  left: 45%;
   background-color: black;
   color: whitesmoke;
   padding-left: 30px;
