@@ -1,6 +1,6 @@
+/*********************** Slid show controls *********************** */
 var slideIndex = 1;
 
-/*********************** Slid show controls *********************** */
 window.onloadend = function() {showSlides(slideIndex)};
 
 // Next/previous controls
@@ -30,8 +30,8 @@ function showSlides(n) {
 }
 /************************************************************** */
 
+// Updates the Year of the copyright in the footer
 function setCopyrightDate(){
-    // Updates the Year of the copyright in the footer
     year = new Date().getFullYear();
     document.write(year);
   }
