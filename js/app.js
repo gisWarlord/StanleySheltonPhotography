@@ -53,9 +53,14 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// Display a message when the Send button is clicked
 $("#btnSend").click(function(){
-  // alert("This Form is under construction");
   $("#frmMessage").fadeIn();
   $("#frmMessage").html("This Feature is Under Construction");
   $("#frmMessage").delay(4000).fadeOut();
 });
+
+// Reset the form when the modal form is closed
+$('#modal-email').on('hidden.bs.modal', function () {
+  $(this).find('form').trigger('reset');
+})
