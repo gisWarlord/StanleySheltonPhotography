@@ -2,14 +2,13 @@
 
 ## Description
 ```
-A website to showcase Stanley Shelton Photography
+A website created to showcase Stanley Shelton Photography
 
 ```
 
 
 
 ## Custom CSS Classes
-```
 The class(es) I created are:
 
 1. .headImg
@@ -22,9 +21,7 @@ The class(es) I created are:
 3. .headTxt
     Sets the text inside the header image
 
-
 ## Custom JavaScript Functions
-```
 The javascript functions I created are:
 
 1. function setCopyrightDate()
