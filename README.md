@@ -24,14 +24,14 @@ The class(es) I created are:
 ## Custom JavaScript Functions
 The javascript functions I created are:
 
-1. function setCopyrightDate() - 
+1.  setCopyrightDate() - 
     Updates the Year of the copyright in the footer
 
-2. function showSlides(n) - 
+2.  showSlides(n) - 
     Updates/changes the slid show image
     
-3. function plusSlides(n) - 
+3.  plusSlides(n) - 
     Next/previous controls
 
-4. function currentSlide(n) - 
+4.  currentSlide(n) - 
     Thumbnail image controls
