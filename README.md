@@ -2,7 +2,7 @@
 
 ## Description
 ```
-A website to showcase Stanley Shelton Photography
+A website created to showcase Stanley Shelton Photography
 
 ```
 
